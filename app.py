@@ -116,7 +116,7 @@ st.markdown(f"""
 # -------------------------
 _default_counts = "counts.tsv"
 _default_taxa = "taxa.tsv"
-_default_diets = "persephone" / "data" / "diet"
+_default_diets = Path("persephone") / "data" / "diet"
 
 def load_table(path):
     try:
