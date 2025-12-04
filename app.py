@@ -848,8 +848,10 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Build S
-S = pd.DataFrame(0.0, index=species_mets, columns=species_rxns)
-mismatch_warnings = []
+with st.expander(tr("Compute stoichiometric matrix", "Calcular matriz S")):
+    if st.button(tr("Compute S", "Calcular S")):
+        S = pd.DataFrame(0.0, index=species_mets, columns=species_rxns)
+        mismatch_warnings = []
 
 for rxn in species_rxns:
     rxn_row = rxninfo_idx.loc[rxn]
