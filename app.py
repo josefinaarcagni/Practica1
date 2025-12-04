@@ -114,10 +114,9 @@ st.markdown(f"""
 # -------------------------
 # INTERNAL DEFAULT PATHS (Hidden from user)
 # -------------------------
-_base = Path.home() / "Downloads" / "persephonepy_toJose"
-_default_counts = _base / "counts.tsv"
-_default_taxa = _base / "taxa.tsv"
-_default_diets = _base / "persephone" / "data" / "diet"
+_default_counts = "counts.tsv"
+_default_taxa = "taxa.tsv"
+_default_diets = "persephone" / "data" / "diet"
 
 def load_table(path):
     try:
@@ -665,7 +664,7 @@ def parse_stoich_list(s):
 # ---------------------------
 # Paths — adjust base_path if needed
 # ---------------------------
-base_path = Path("/Users/josefinaarcagni/Downloads/persephonepy_toJose/persephone/data/models/AGORA2-APOLLO")
+base_path = Path("persephone/data/models/AGORA2-APOLLO")
 
 metinfo_p = base_path / "AGORA2-APOLLO.metInfo.csv"
 metTaxMat_p = base_path / "AGORA2-APOLLO.metTaxMat.csv"
@@ -981,9 +980,9 @@ st.markdown(f"""
 
 # Pre-diet files
 pre_diet_files = {
-    "Reaction Abundance": Path("/Users/josefinaarcagni/Downloads/persephonepy_toJose/output/rxnAbundance.csv"),
-    "Reaction Presence": Path("/Users/josefinaarcagni/Downloads/persephonepy_toJose/output/rxnPresence.csv"),
-    "Subsystem Abundance": Path("/Users/josefinaarcagni/Downloads/persephonepy_toJose/output/subsAbundance.csv")
+    "Reaction Abundance": Path("output/rxnAbundance.csv"),
+    "Reaction Presence": Path("persephonepy_toJose/output/rxnPresence.csv"),
+    "Subsystem Abundance": Path("output/subsAbundance.csv")
 }
 
 for name, path in pre_diet_files.items():
@@ -1050,7 +1049,7 @@ post_diet_files = {
     "Net Uptake Fluxes": "netUptakeFluxes"
 }
 
-output_dir = Path("/Users/josefinaarcagni/Downloads/persephonepy_toJose/output")
+output_dir = Path("output")
 diets = ["EUAverageDiet", "HighFiberDiet", "HighProteinDiet", "VegetarianDiet", "UnhealthyDiet"]
 
 selected_diet = st.selectbox(tr("Select a diet to explore", "Selecciona una dieta para explorar"), diets)
