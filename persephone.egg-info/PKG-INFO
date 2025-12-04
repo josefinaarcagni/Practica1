@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: persephone
+Version: 2025.1.0
+Summary: Package to ...
+Home-page: 
+Author: Telmo Blasco, ...
+Author-email: tblasco@unav.es, ...
+Requires-Dist: pandas
+Requires-Dist: pyarrow>=12.0.1
+Requires-Dist: numpy
+Requires-Dist: cobra
+Requires-Dist: scipy<1.11,>=1.7
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary

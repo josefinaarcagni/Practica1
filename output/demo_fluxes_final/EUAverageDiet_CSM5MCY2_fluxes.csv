@@ -1,0 +1,17 @@
+metabolite,flux,simulated
+acetate,13.56101,True
+propionate,21.28717,True
+butyrate,6.65562,True
+isobutyrate,2.84284,True
+isovalerate,0.92579,True
+valerate,0.33267,True
+caproate,0.62053,True
+lactate,3.48209,True
+succinate,4.1654,True
+formate,12.62829,True
+ethanol,3.16588,True
+indole,0.69622,True
+p_cresol,0.12184,True
+NH3,2.32377,True
+CO2,100.87261,True
+H2,8.25904,True

@@ -1,0 +1,6 @@
+pandas
+pyarrow>=12.0.1
+numpy
+cobra
+scipy<1.11,>=1.7
+tqdm
