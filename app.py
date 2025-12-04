@@ -114,8 +114,8 @@ st.markdown(f"""
 # -------------------------
 # INTERNAL DEFAULT PATHS (Hidden from user)
 # -------------------------
-_default_counts = "counts.tsv"
-_default_taxa = "taxa.tsv"
+_default_counts = Path("counts.tsv")
+_default_taxa = Path("taxa.tsv")
 _default_diets = Path("persephone") / "data" / "diet"
 
 def load_table(path):
