@@ -25,7 +25,12 @@ with header_l:
     st.markdown("<h1 style='margin-bottom:0;'>Práctica 1 - Fluxómica y Nutrición Personalizada</h1>", unsafe_allow_html=True)
     st.markdown("<p style='margin-top:0.2rem; font-size:14px;'>Josefina Arcagni (jarcagniriv@unav.es)</p>", unsafe_allow_html=True)
 with header_r:
-    lang = st.selectbox("", ["English", "Castellano"], key="lang_select")
+    lang = st.selectbox(
+    "Language", 
+    ["English", "Castellano"], 
+    key="lang_select",
+    label_visibility="collapsed",
+)
 with header_date:
     st.markdown("<p style='text-align:right; margin-bottom:0;'>4/12/2025</p>", unsafe_allow_html=True)
 
