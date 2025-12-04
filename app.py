@@ -981,7 +981,7 @@ st.markdown(f"""
 # Pre-diet files
 pre_diet_files = {
     "Reaction Abundance": Path("output/rxnAbundance.csv"),
-    "Reaction Presence": Path("persephonepy_toJose/output/rxnPresence.csv"),
+    "Reaction Presence": Path("output/rxnPresence.csv"),
     "Subsystem Abundance": Path("output/subsAbundance.csv")
 }
 
